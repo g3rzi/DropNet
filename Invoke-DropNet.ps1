@@ -49,12 +49,12 @@ function Invoke-DropNet() {
 	param
 	(
         [int]$ProcessID = $null,
-		[int]$LocalPort = $null,
+	[int]$LocalPort = $null,
         [int]$RemotePort = $null,
         [string]$LocalIPAddress = $null,
         [string]$RemoteIPAddress = $null,
         [string]$State,
-		[switch]$CloseRepeat,
+	[switch]$AutoClose,
         [int]$Milliseconds = 300,
         [switch]$GetConnections
 	)
@@ -278,7 +278,7 @@ function Invoke-DropNet() {
         return $newConnection
     }
 
-    if($CloseRepeat){
+    if($AutoClose){
         Write-Host "[*] Dropping connections"
 
         while($true){
