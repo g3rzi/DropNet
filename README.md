@@ -4,6 +4,8 @@
 Show all the TCP connections and allows you to close any network connection each time it is being established based on a given parameters.
 
 
+![alt text](https://github.com/g3rzi/DropNet/blob/assets/Invoke-DropNet.gif)
+
 ## Requirements
 Admin privileges to close the network connection. Otherwise it will also be able to show you the connections status.
 
