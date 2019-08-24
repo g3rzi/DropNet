@@ -317,9 +317,4 @@ function Invoke-DropNet() {
 
         $connections | Sort-Object LocalPort | ft PID,ProcessName,LocalAddress,LocalPort,RemoteAddress,RemotePort,State
     }
-
-
-    #$connections = [ConnectionKiller.Program]::Connections()
-    #$connections = [ConnectionKiller.Program]::GetAllTCPConnections()
-    #[ConnectionKiller.Program+Disconnecter]::CloseConnection($a[60])
 }
