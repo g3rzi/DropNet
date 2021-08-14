@@ -1,5 +1,7 @@
 [![License][license-img]][license]
 
+I created this tool as a small research I did on dropping process network connections. You can read more about this research [here](https://eviatargerzi.medium.com/quiet-in-the-windows-dropping-network-connections-a5181b874116).
+
 # Invoke-DropNet
 Show all the TCP connections and allows you to close any network connection each time it is being established based on a given parameters.
 
