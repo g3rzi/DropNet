@@ -215,10 +215,10 @@ function Invoke-DropNet() {
             $filteredConnections = $filteredConnections | Where-Object {$_.RemotePort -eq $RemotePort}
         }
         if(($LocalIPAddress -ne $null) -and ($LocalIPAddress -ne "")){
-            $filteredConnections = $filteredConnections | Where-Object {$_.LocalIPAddress -eq $LocalIPAddress}
+            $filteredConnections = $filteredConnections | Where-Object {$_.LocalAddress -eq $LocalIPAddress}
         }
         if(($RemoteIPAddress -ne $null) -and ($RemoteIPAddress -ne "")){
-            $filteredConnections = $filteredConnections | Where-Object {$_.RemoteIPAddress -eq $RemoteIPAddress}
+            $filteredConnections = $filteredConnections | Where-Object {$_.RemoteAddress -eq $RemoteIPAddress}
         }
         if(($State -ne $null) -and ($State -ne "")){
             $filteredConnections = $filteredConnections | Where-Object {$_.State -eq $State}
